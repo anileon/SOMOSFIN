@@ -139,7 +139,8 @@ h5 {
 .botonHeader {
     display: flex;
     flex-direction: row;
-    padding: 0px 30px;
+    padding: 0px 20px;
+    z-index: 1;
 
 }
 
@@ -149,6 +150,24 @@ h5 {
     justify-content: center;
     padding: 5px 0px 15px 280px;
 }
+
+.botonPlanes {
+    color: #fff;
+    background:   #171C21;
+    text-align: center;
+    width: 250px;
+    border-radius: 50px;
+    align-self: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.botonPlanes:hover {
+    background: #765b86;
+    color: #0b1111;
+    text-align: center;
+}
+
 
 .experiencia {
     background-color: #f4e7d8;
@@ -175,7 +194,6 @@ h5 {
 }
 
 
-
 .iconitos {
     width: 250px;
     display: flex;
@@ -188,6 +206,7 @@ h5 {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
+    padding: 10px 0px 0px;
 
 }
 
@@ -257,6 +276,7 @@ h5 {
     display: flex;
     justify-content: center;
     padding: 100px;
+    
 
 }
 
@@ -265,6 +285,8 @@ h5 {
     display: flex;
     justify-content: center;
     border-radius: 25px;
+    width: fit-content;
+    height: 530px;
 }
 
 .reservas-coach {
