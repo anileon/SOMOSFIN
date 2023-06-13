@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+@font-face {
+    font-family: "ESRebondGrotesque";
+    src: url(../fonts/ESRebondGrotesque-Bold.woff2),
+        url(../fonts/ESRebondGrotesque-BoldItalic.woff2),
+        url(../fonts/ESRebondGrotesque-Italic.woff2),
+        url(../fonts/ESRebondGrotesque-Light.woff2),
+        url(../fonts/ESRebondGrotesque-LightItalic.woff2),
+        url(../fonts/ESRebondGrotesque-Medium.woff2),
+        url(../fonts/ESRebondGrotesque-MediumItalic.woff2),
+        url(../fonts/ESRebondGrotesque-MediumItalic.woff2),
+        url(../fonts/ESRebondGrotesque-Regular.woff2);
+}
 
 * {
     box-sizing: border-box;
@@ -12,10 +24,9 @@ body {
 
 header {
     background-image: url(../assets/Proposal_SomosFin.jpg);
-    height: 120vh;
+    height: 100vh;
     background-size: cover;
     z-index: 2;
-
 }
 
 .headerIntro {
@@ -56,22 +67,24 @@ header {
 }
 
 h1 {
+    font-family: 'ESRebondGrotesque', bold;
+    font-style: normal;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 95%;
     color: white;
-    font-size: 150px;
-    font-family: 'Inter', sans-serif;
-    width: 400px;
-    padding: 0px 20px;
+    width: 900px;
 }
 
 h2 {
     color: #0b1111;
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
-    padding: 55px 0px 0px 0px;
+    padding: 0px;
 }
 
 h3 {
@@ -79,6 +92,8 @@ h3 {
     font-family: 'Inter', sans-serif;
     font-size: 13px;
     width: 800px;
+    text-align: center;
+    font-weight: 400;
 }
 
 h5 {
@@ -96,35 +111,49 @@ h5 {
     padding: 0px 50px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {}
+
 
 .introduccion {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 115%;
+    padding: 20px;
 }
 
 .introduccion h3 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0px 10px 10px;
-    margin-right: 100px;
+    margin-right: 180px;
     align-self: center;
+    text-align: left;
+    width: 800px;
+
 }
 
 .introduccion svg {
     padding: 30px 0px;
-    width: 360px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .botonWpp {
     color: #0b1111;
     background: #7656E2;
     text-align: center;
-    width: 250px;
+    width: 200px;
     border-radius: 50px;
     align-self: center;
-    padding: 20px 20px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -133,8 +162,6 @@ h5 {
     color: #0b1111;
     text-align: center;
 }
-
-
 
 .botonHeader {
     display: flex;
@@ -148,7 +175,7 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 5px 0px 15px 280px;
+    margin-left: 10px;
 }
 
 .botonExperiencia {
@@ -158,8 +185,26 @@ h5 {
     width: 250px;
     border-radius: 50px;
     align-self: center;
+    padding: 15px 15px;
+    text-decoration: none;
+
+}
+
+.botonProducto {
+    color: #0b1111;
+    background: #66CC66;
+    text-align: center;
+    width: 250px;
+    border-radius: 50px;
+    align-self: center;
     padding: 20px 20px;
     text-decoration: none;
+}
+
+.botonProducto:hover {
+    background: #8dd37c;
+    color: #0b1111;
+    text-align: center;
 
 }
 
@@ -175,7 +220,7 @@ h5 {
 }
 
 .botonPlanes:hover {
-    background: #765b86;
+    background: #a89d9d;
     color: #0b1111;
     text-align: center;
 }
@@ -185,23 +230,55 @@ h5 {
     background-color: #f4e7d8;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.experiencia-imagen img {
+    width: 520px;
+    height: 651px;
+
+}
+
+.experiencia-imagen {
+    width: 520px;
+}
+
+.experiencia-imagen:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) -1%, rgba(0, 0, 0, 0.1) 100%);
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0 !important;
+
 }
 
 .experiencia-usuario {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 35px;
+    width: 100vw;
+
+
+}
+
+.experiencia-usuario h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
 
 }
 
 .iconos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex: 0.9;
     gap: 0px 50px;
+    padding: 15px;
     font-family: 'Inter', sans-serif;
 
 }
@@ -225,6 +302,7 @@ h5 {
 
 .iconitos p {
     font-family: 'Inter', sans-serif;
+    font-size: 15px;
 
 }
 
@@ -240,9 +318,9 @@ h5 {
 
 .producto h2 {
     font-size: 40px;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
     line-height: 48px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .productoSF img {
@@ -254,18 +332,54 @@ h5 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    padding: 0px 90px;
+    gap: 90px;
+    justify-content: space-between;
 
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    width: 1092px;
+    height: 240px;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
 }
 
 .productos h3 {
-    color: #0b1111;
-    font-size: 33px;
+    width: 421px;
+    height: 129px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120.5%;
+    text-align: left;
+    /* or 43px */
+    color: #222222;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .productos p {
     color: #0b1111;
-    font-size: 20px;
+    width: 506px;
+    height: 61px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 17px */
 }
 
 .HistoriasDeUsuario {
@@ -282,74 +396,147 @@ h5 {
 }
 
 .historia-usuario {
+    /* Auto layout */
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 50px 0px 50px 0px;
-    width: 100%;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 1339px;
+    height: 559px;
 
 }
 
 .historia-usuario-1 {
-    background-color: white;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 27px 42px;
+    gap: 18.4px;
+
     width: 433px;
     height: 559px;
-    margin: 20px;
+
+    background: #FFFFFF;
     border-radius: 20px;
 
 }
 
-.historia-usuario-1 .historia-imagen {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: url(../assets/UStory.jpg);
+.historia-usuario-1 .historia-imagen1 {
+    background-image: url(../assets/US-1.jpg);
     background-size: cover;
     background-position-y: center;
+    border-radius: 50%;
+
+    width: 114px;
+    height: 114px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
+.historia-usuario-1 .historia-imagen2 {
+    background-image: url(../assets/US-2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 50%;
+
+    width: 114px;
+    height: 114px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.historia-usuario-1 .historia-imagen3 {
+    background-image: url(../assets/US-3.jpg);
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 50%;
+
+    width: 114px;
+    height: 114px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
 .historia-usuario-1 p {
-    padding: 40px 5px;
-    font-size: 24px;
-    line-height: 28.8px;
+
+    width: 339px;
+    height: 260px;
+
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
 }
 
 .historia-usuario-1 h6 {
-    margin: 20px;
-    padding: 30px 5px;
+    width: 339px;
+    height: 36px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
     font-size: 24px;
-    line-height: 28.8px;
-    font-weight: 500;
+    line-height: 120%;
+    /* or 29px */
 }
 
 .Reservas {
     background-color: #F3E0C7;
     display: flex;
     justify-content: center;
-    padding: 100px;
-
+    padding: 50px;
+    width: auto;
+    height: 632px;
 
 }
 
 .reserva {
-    background-color: #CCA570;
+    /* Auto layout */
+
     display: flex;
-    justify-content: center;
-    border-radius: 25px;
-    width: fit-content;
-    height: 530px;
+    flex-direction: row;
+    align-items: center;
+    padding: 60px;
+    gap: 68px;
+
+    width: 1341px;
+    height: 532px;
+
+    background: #CCA570;
+    border-radius: 20px;
+
 }
 
 .reservas-coach {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
-    text-align: center;
-    height: 400px;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+
+    width: 644px;
+    height: 300px;
+
 }
 
 .reservas-coach a {
@@ -366,9 +553,32 @@ h5 {
 }
 
 .reservas-coach h2 {
-    font-size: 50px;
-    line-height: 55px;
+    width: 517px;
+    height: 110px;
+
+    font-family: 'ESRebondGrotesque', bold;
+    font-style: normal;
     font-weight: 700;
+    font-size: 50px;
+    line-height: 110%;
+    /* or 55px */
+
+    text-align: center;
+
+    color: #1D1B19;
+}
+
+.reservas-coach p {
+
+    width: 627px;
+    height: 44px;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 .reservas-img {
@@ -379,15 +589,17 @@ h5 {
 }
 
 .reservas-img img {
-    width: 380px;
-    height: 300px;
+
     border-radius: 30px;
+    width: 518px;
+    height: 405px;
 
 }
 
 .Planes {
     padding: 50px;
     background-color: #F3E0C7;
+
 }
 
 .Planes h2 {
@@ -395,11 +607,13 @@ h5 {
 }
 
 .planes {
+
     display: flex;
     flex-direction: row;
-    padding: 50px;
     justify-content: center;
-    gap: 60px;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
 }
 
 .planes-1 {
@@ -410,8 +624,6 @@ h5 {
     justify-content: space-around;
     text-align: center;
     display: flex;
-
-    background: chocolate;
     flex-wrap: wrap;
     align-content: space-around;
     border-radius: 20px;
@@ -422,81 +634,127 @@ h5 {
     height: 502px;
     background: #7656E2;
     border-radius: 20px;
+}
 
+.linea-plan-full {
+    /* Line 1 */
+    width: 353px;
+    height: 0px;
+    left: 0px;
+    top: 163px;
+
+    /* Base/Black */
+
+    border: 1px solid #171C21;
+}
+
+.planes-1.plan-full p {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: #171C21;
+}
+
+.planes-1.plan-full span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .planes-1.plan-compact {
     width: 353px;
     height: 502px;
 
-    background: #61D47E;
+    background: #66CC66;
+
     border-radius: 20px;
+
 }
+
+.planes-1.plan-compact p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: #171C21;
+}
+
+.planes-1.plan-compact span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.linea-plan-compact {
+    width: 353px;
+    height: 0px;
+    left: 808px;
+
+    border: 1px solid #171C21;
+}
+
+.texto-plan-compact {
+    text-align: left;
+}
+
+.texto-plan-full {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
 
 .planes-1.plan-freemium {
     width: 353px;
     height: 502px;
-
     background: #D9D9D9;
     border-radius: 20px;
 }
 
-.planes-1.plan-full p {
 
-    /* Heading */
-    font-family: 'Inter', sans-serif;;
-    font-style: normal;
-    font-weight: 400;
+.linea-plan-freemium {
+    width: 353px;
+    height: 0px;
+    left: 1283px;
 
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-
-    /* Base/Black */
-    color: #171C21;
+    border: 0.1px solid #171C21;
 }
 
-.planes-1.plan-full span {
-    font-family: 'Inter', sans-serif;;
+
+.planes-1.plan-freemium span {
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 50px;
-}
 
-.planes-1.plan-compact span {
-    font-family: 'Inter', sans-serif;;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 50px;
-}
-
-.planes-1.plan-compact p {
-    /* Heading */
-    font-family:'Inter', sans-serif;;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: center;
-
-    /* Base/Black */
-    color: #171C21;
 
 }
 
 .planes-1.plan-freemium p {
-    /* Heading */
-    font-family: 'Inter', sans-serif;;
+
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 30px;
-    text-align: center;
+    padding-left: 15px;
+
 
     /* Base/Black */
     color: #171C21;
 }
-
 
 
 footer {
@@ -510,20 +768,45 @@ footer {
 .footerSF {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
+    align-items: flex-start;
     padding: 0px;
     gap: 60px;
-    
-    
+    font-family: 'Inter', sans-serif;
+
     width: 422px;
     height: 122px;
-    
+
+}
+
+.footer1 h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.footer2 h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.footer-links {
+    color: #0b1111;
+    text-decoration: none;
+}
+
+.footer-links:hover{
+    color: #7656E2;
 }
 
 .footerSF p {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .footerLogo img {
@@ -545,6 +828,7 @@ footer {
     align-items: center;
     padding: 10px 16px;
     gap: 8px;
+    font-family: 'Inter', sans-serif;
 }
 
 .footerRedes a {
