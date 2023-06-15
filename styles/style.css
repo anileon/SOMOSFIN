@@ -269,6 +269,12 @@ section {
 .experiencia-usuario h2 {
     padding-top: 40px;
     padding-bottom: 30px;
+    font-family: 'ES Rebond Grotesque', bold;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.01em;
+
 
 }
 
@@ -391,8 +397,15 @@ section {
 }
 
 .HistoriasDeUsuario h2 {
+    width: 668px;
+    height: 28px;
     text-align: center;
-    margin: 30px;
+    margin: 80px;
+    font-family: 'ES Rebond Grotesque';
+    font-style:normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
 
 }
 
@@ -490,7 +503,7 @@ section {
 
 .historia-usuario-1 h6 {
     width: 339px;
-    height: 36px;
+    height: 20px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -798,7 +811,7 @@ footer {
     text-decoration: none;
 }
 
-.footer-links:hover{
+.footer-links:hover {
     color: #7656E2;
 }
 
