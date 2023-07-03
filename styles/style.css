@@ -159,10 +159,9 @@ section {
     color: #FFFFFF;
     background: #7656E2;
     text-align: center;
-    width: 200px;
     border-radius: 50px;
     align-self: center;
-    padding: 10px;
+    padding: 15px;
     text-decoration: none;
 }
 
@@ -220,6 +219,7 @@ section {
     align-self: center;
     padding: 10px;
     text-decoration: none;
+    margin-top: -20px;
 }
 
 .botonSuscripcion:hover {
@@ -492,7 +492,7 @@ section {
 /* Historia de usuario */
 
 .HistoriasDeUsuario {
-    background-color: #f4e7d8;
+    background-color: #F0E6D8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -600,7 +600,7 @@ section {
 /* Reservas */
 
 .Reservas {
-    background-color: #F3E0C7;
+    background-color: #F0E6D8;
     display: flex;
     justify-content: center;
     padding: 50px;
@@ -678,17 +678,14 @@ section {
 }
 
 .reservas-img {
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    justify-content: center;
+    transform: translateX(-200px);
 }
 
 .reservas-img img {
     border-radius: 30px;
     width: 518px;
     height: 405px;
-    transform: translateX(-200px);
+   
 
 }
 
@@ -698,7 +695,7 @@ section {
 
 .Planes {
     padding: 50px;
-    background-color: #F3E0C7;
+    background-color: #F0E6D8;
 }
 
 .Planes h2 {
@@ -915,7 +912,7 @@ footer {
 
 @media only screen and (max-width: 467px) {
     header {
-        height: 68.5vh;
+        height: auto;
         background-size: cover;
         background-position: center;
     }
@@ -924,16 +921,15 @@ footer {
         width: auto;
         display: flex;
         height: 120px;
-        padding: 33px 5px 0px 15px;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        gap: 25px;
     }
 
     .botonHeader {
         display: flex;
         height: 46px;
-        width: 190px;
+       
     }
 
     .botonReserva {
@@ -982,7 +978,7 @@ footer {
 
     .opening::after {
         display: flex;
-        height: 110%;
+        height: 100%;
         padding: 40px 0px;
         flex-direction: column;
         align-items: flex-start;
@@ -1064,6 +1060,7 @@ footer {
 
     .suscripcion-titulos {
         padding: 0px;
+        height: auto;
     }
 
     .suscripcion-titulos h3 {
@@ -1201,10 +1198,11 @@ footer {
         justify-content: center;
         flex-direction: column;
         gap: 40px;
+        transform: translateY(-180px);
     }
 
     .reservas-img img {
-        transform: translateY(-180px);
+       
         width: 310px;
         height: 280px;
     }
@@ -1287,7 +1285,7 @@ footer {
     }
 
     .footerSF h5 {
-        text-align: center;
+        text-align: start;
     }
 
     .footer-bottom {
@@ -1347,6 +1345,8 @@ footer {
 
     h1 {
         font-size: 86px;
+        padding: 40px 0px;
+        width: auto;
     }
 
     h2 {
@@ -1359,12 +1359,13 @@ footer {
     }
 
     .introduccion {
-        display: flex;
-        width: 1auto;
+        width: auto;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+        z-index: 1;
         gap: 40px;
+        transform: translateY(80px)
     }
 
     .introduccion h3 {
@@ -1415,7 +1416,7 @@ footer {
         align-self: center;
         padding: 10px;
         text-decoration: none;
-        transform: translateY(280px);
+        transform: translateY(310px);
 
     }
 
@@ -1595,10 +1596,6 @@ footer {
     .historia-imagen1,
     .historia-imagen2,
     .historia-imagen3 {
-        background-image: url(../assets/US-2.jpg);
-        background-size: cover;
-        background-position-y: center;
-        border-radius: 50%;
         width: 100px !important;
         height: 164px !important;
     }
@@ -1619,8 +1616,8 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 60px;
-        gap: 68px;
-        width: 943px;
+        gap: 0px;
+        width: auto;
         height: 952px;
         background: #CCA570;
         border-radius: 20px;
@@ -1650,8 +1647,8 @@ footer {
         line-height: 120%;
     }
 
-    .reservas-img img {
-        transform: translateY(-160px);
+    .reservas-img {
+        transform: none;
     }
 
 
