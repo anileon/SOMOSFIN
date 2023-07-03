@@ -800,7 +800,7 @@ section {
 .planes-1.plan-freemium {
     display: flex;
     align-items: center;
-    width: 383px;
+    width: 403px;
     height: 602px;
 
     background: #9F89EB;
@@ -1336,13 +1336,13 @@ footer {
 
     .openingSF {
         position: relative;
-        height: 87vh;
+        height: 74vh;
         width: auto;
     }
 
     .opening::after {
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) -1%, rgba(0, 0, 0, 0.1) 100%);
-        height: 87vh;
+        height: 74vh;
     }
 
     h1 {
