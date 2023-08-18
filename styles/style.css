@@ -46,8 +46,6 @@ header {
     margin: 0px 70px;
     border-radius: 20px;
     background-size: cover;
-
-
 }
 
 .headerIntro {
@@ -58,13 +56,16 @@ header {
     padding: 50px 30px 37px;
 }
 
+.logoSF {
+    width: 150px;
+    height: 30px;
+    margin-left: 50px;
+}
 
 .openingSF {
     position: relative;
 
 }
-
-
 
 .openingSF img {
     position: relative;
@@ -240,9 +241,9 @@ section {
     align-self: center;
     padding: 10px 40px;
     text-decoration: none;
-    transform: translateX(-360px);
+    
     position: relative;
-    top: 170px;
+    top: 60px;
 }
 
 .botonReserva:hover {
@@ -655,9 +656,6 @@ section {
     line-height: 22px;
 }
 
-.reservas-img {
-    transform: translateX(-100px);
-}
 
 .reservas-img img {
     border-radius: 30px;
@@ -743,7 +741,7 @@ section {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 36px;
 }
 
 .linea-plan-compact {
@@ -881,7 +879,7 @@ footer {
 
 /* Mobile devices responsive */
 
-@media only screen and (max-width: 467px) {
+@media only screen and (max-width: 607px) {
     header {
         height: auto;
         width: auto;
@@ -1306,7 +1304,7 @@ footer {
 
 /* Tablet devices responsive */
 
-@media only screen and (min-width: 468px) and (max-width: 1223px) {
+@media only screen and (min-width: 608px) and (max-width: 1353px) {
     header {
 
         width: 150vw;
@@ -1339,7 +1337,6 @@ footer {
 
     h1 {
         font-size: 86px;
-        padding: 40px 0px;
         width: auto;
     }
 
@@ -1354,11 +1351,9 @@ footer {
 
     .introduccion {
         width: auto;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         z-index: 1;
-        margin-top: -80px;
-
+        gap: 50px;
     }
 
     .introduccion h3 {
@@ -1410,7 +1405,7 @@ footer {
         align-self: center;
         padding: 10px;
         text-decoration: none;
-        transform: translateY(310px);
+        transform: translateY(490px);
 
     }
 
