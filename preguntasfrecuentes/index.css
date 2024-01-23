@@ -1,0 +1,49 @@
+@import url("../styles/legal.css");
+
+.preguntasfrecuentes {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 200px;
+    align-items: flex-start;
+}
+
+.acordeon {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo de los ítems */
+.item {
+    margin-bottom: 10px;
+   
+}
+
+/* Estilo de los títulos */
+.titulo {
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.titulo i {
+    position: absolute;
+    right: 300px;
+    transition: transform 0.2s ease;
+}
+
+/* Estilo de los contenidos (inicialmente ocultos) */
+.contenido {
+    display: none;
+}
+
+/* Estilo para mostrar el contenido al hacer clic en el título */
+.item.open .contenido {
+    display: block;
+}
+
+p {
+    padding: 0px 10px;
+}

@@ -13,33 +13,85 @@
         gtag('config', 'G-D3H163FP9P');
     </script>
 
+    <!-- Hotjar Tracking Code for https://somosfin.com -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3709407, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- Start Meta Pixel Code -->
+    <!-- <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1517953532331240');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1517953532331240&ev=PageView&noscript=1" /></noscript> -->
+    <!-- End Meta Pixel Code -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="somosfin">
+    <meta property="og:description" content="tu bienestar financiero empieza acá">
+    <meta property="og:image" content="https://www.somosfin.com/assets/logofavicon.png">
+    <meta property="og:url" content="https://www.somosfin.com/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/logofavicon.png" type="image/x-icon">
-    <title>somosfin</title>
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <title> somosfin </title>
+
 </head>
 
 <body>
     <div>
-        <div class="headerIntro">
-            <img class="logoSF" src="./assets/somosfin_logo.png" alt="logoSomosFin">
-            <div class="botonHeader">
-                <a href="https://api.whatsapp.com/send?phone=447749834889" class="botonWpp"> Escribinos <img
-                        src="./assets/icons-whatsapp.png" alt=""> </a>
-            </div>
+        <div class="headerIntro" id="header">
+            <a href="../">
+                <img class="logoSF" src="./assets/somosfin_logo.png" alt="logoSomosFin">
+            </a>
+            <nav>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="../#experiencia">Experiencia somosfin </a></li>
+                    <li><a href="../#suscripcion">Qué hacemos</a></li>
+                    <li><a href="../planes">Nuestros Planes</a></li>
+                    <li><a href="./blog/">Blog</a></li>
+                </ul>
+                <div class="botonHeader">
+                    <a href="https://api.whatsapp.com/send?phone=447749834889" class="botonLogin">Contactános </a>
+                </div>
+            </nav>
+
         </div>
         <header class="openingSF">
             <div class="opening">
-                <h1>Construí tu <br> bienestar <br>financiero </h1>
+                <h1> Construí tu <br> bienestar <br> financiero </h1>
                 <div class="introduccion">
-                    <svg viewBox="0 0 264 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <svg viewBox="0 0 264 198" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M-8.30516e-06 190C-8.49829e-06 194.418 3.5881 198.034 7.9919 197.677C31.3004 195.787 53.287 185.675 69.9444 169.004C88.4948 150.438 98.9164 125.256 98.9164 99.0001C98.9164 72.7436 88.4949 47.5626 69.9444 28.9965C53.287 12.325 31.3004 2.21358 7.99194 0.323499C3.5881 -0.0336073 -1.56566e-07 3.58181 -3.49695e-07 8.00008L-8.30516e-06 190Z"
                             fill="#ADEA88" />
@@ -49,13 +101,11 @@
                         <path
                             d="M165.084 190C165.084 194.418 168.672 198.034 173.076 197.677C196.384 195.787 218.371 185.675 235.028 169.004C253.578 150.438 264 125.256 264 99.0001C264 72.7436 253.578 47.5626 235.028 28.9965C218.371 12.325 196.384 2.21358 173.076 0.323499C168.672 -0.0336067 165.084 3.58181 165.084 8.00008L165.084 190Z"
                             fill="#ADEA88" />
-                    </svg>
+                    </svg> -->
                     <section>
                         <h3>
-                            Cambiá tu forma de entender las finanzas. En somosfin te guiamos en tus decisiones para que
-                            alcances tus metas de forma consciente. Te acompañamos en el camino del bienestar financiero
-                            desde salir de deudas o saber ahorrar,
-                            hasta aprender de inversiones.
+                            En Somosfin te acompañamos en el camino del bienestar financiero desde salir de deudas,
+                            saber ahorrar o aprender a invertir. Cambiá tu forma de entender las finanzas.
                         </h3>
                         <div class="botonIndex">
                             <a href="#suscripcion" class="botonWpp">
@@ -67,9 +117,27 @@
             </div>
         </header>
         <main>
+
+            <div class="Reservas">
+                <div class="reserva">
+                    <div class="reservas-coach">
+                        <h2><strong> Agendá una reunión sin costo con nosotros</strong></h2>
+                        <p> Coordiná una llamada gratuita para contarnos tu caso y enterarte cómo podemos guiarte hacia
+                            el bienestar financiero.<br><br>
+                            En somosfin queremos empoderarte para que impulses tu calidad de vida, y el primer paso es
+                            conocerte.
+                        </p>
+                        <a href="https://calendly.com/somosfin/30min" class="botonReserva" target="_blank"> Agendá
+                            ahora</a>
+                    </div>
+                    <div class="reservas-img">
+                        <img src="./assets/Meri_version_tablas.png" alt="coach">
+                    </div>
+                </div>
+            </div>
             <div class="experiencia">
                 <div class="experiencia-usuario">
-                    <h2> La experiencia somosfin </h2>
+                    <h2 id="experiencia"> La experiencia somosfin </h2>
                     <div class="iconos">
                         <div class="iconitos">
                             <img src="./assets/exp-img.png" alt="" width="65" height="65">
@@ -89,14 +157,16 @@
                         <div class="iconitos">
                             <img src="./assets/exp-img3.png" alt="" width="61" height="72">
                             <h4> Impulsá tus finanzas </h4>
-                            <p>Aprendé para confiar en tus decisiones, como la planificación de gastos o la inversión
+                            <p>Aprendé para confiar en tus decisiones, como la planificación de gastos o la
+                                inversión
                                 coherente con tus objetivos.</p>
                         </div>
                         <div>
                             <div class="iconitos">
                                 <img src="./assets/exp-img4.png" alt="" width="65" height="65">
                                 <h4>Alcanzá el bienestar financiero</h4>
-                                <p>Tené siempre disponible nuestras herramientas y contenido para estar en paz con tus
+                                <p>Tené siempre disponible nuestras herramientas y contenido para estar en paz con
+                                    tus
                                     finanzas y disfrutar tu vida. </p>
                             </div>
                         </div>
@@ -167,13 +237,13 @@
                             </div>
                         </div>
                         <a href="https://api.whatsapp.com/send?phone=447749834889" class="botonSuscripcion">
-                            Escribinos <img src="./assets/icons-whatsapp.png" alt=""> 
+                            Escribinos <img src="./assets/icons-whatsapp.png" alt="">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="HistoriasDeUsuario">
-                <h2><strong> Qué dicen los miembros de Somosfin </strong></h2>
+                <h2><strong> Qué dicen los usuarios de Somosfin </strong></h2>
                 <div class="historia-usuario">
 
                     <div class="historia-usuario-1">
@@ -213,28 +283,8 @@
 
             </div>
 
-            <div class="Reservas">
-                <div class="reserva">
-                    <div class="reservas-coach">
-                        <h2> Agendá una reunión gratis con nosotros</strong></h2>
-                        <p> Coordiná una llamada gratuita para contarnos tu caso y enterarte cómo podemos guiarte hacia
-                            el bienestar financiero.<br><br>
-                            En somosfin queremos empoderarte para que impulses tu calidad de vida, y el primer paso es
-                            conocerte.
-                        </p>
-
-                        <a href="https://calendly.com/somosfin/30min" class="botonReserva"> Ver disponibilidad</a>
-                    </div>
-
-                    <div class="reservas-img">
-
-                        <img src="./assets/Proposal_SomosFin-3block-2.0.jpg" alt="coach">
-                    </div>
-                </div>
-
-            </div>
-            <div class="Planes">
-                <h2><strong> Encontrá el plan para vos </strong></h2>
+            <!-- <div class="Planes">
+                <h2 id="planes"><strong> Encontrá el plan para vos </strong></h2>
                 <div class="planes">
                     <div class="planes-1 plan-full">
                         <div class="full-titulos">
@@ -251,7 +301,8 @@
                             <p>Herramientas y contenido personalizado</p>
                             <div class="linea-plan-full"></div>
                         </div>
-                        <a href="https://buy.stripe.com/5kA3d1eHegdXbe0cMR" class="botonPlanes"> Quiero suscribirme
+                        <a href="https://buy.stripe.com/5kA3d1eHegdXbe0cMR" class="botonPlanes"> Quiero
+                            suscribirme
                         </a>
                     </div>
                     <div class="planes-1 plan-compact">
@@ -271,12 +322,13 @@
                             <div class="linea-plan-compact"></div>
 
                         </div>
-                        <a href="https://buy.stripe.com/8wMdRF0QobXHgyk6ou" class="botonPlanes"> Quiero suscribirme
+                        <a href="https://buy.stripe.com/8wMdRF0QobXHgyk6ou" class="botonPlanes"> Quiero
+                            suscribirme
                         </a>
                     </div>
                     <div class="planes-1 plan-freemium">
                         <div class="freemium-titulos">
-                            <p class="titulo-plan">Membresia Full</p>
+                            <p class="titulo-plan">Membresía Full</p>
                             <p class="titulo-plan"> <span> USD 120</span> / mes</p>
                         </div>
 
@@ -290,15 +342,15 @@
                             <p>Herramientas y contenido personalizado</p>
                             <div class="linea-plan-freemium"></div>
                         </div>
-                        <a href="https://buy.stripe.com/8wMaFt56E7Hr0zmdQX" class="botonPlanes"> Quiero suscribirme
+                        <a href="https://buy.stripe.com/8wMaFt56E7Hr0zmdQX" class="botonPlanes"> Quiero
+                            suscribirme
                         </a>
                     </div>
                 </div>
 
-            </div>
-            <div class="imagen-producto"> </div>
+            </div> -->
+            <!-- <div class="imagen-producto"> </div> -->
         </main>
-
 
         <footer>
             <div class="footerLogo">
@@ -308,36 +360,49 @@
                 <div class="footer1">
                     <h5><strong> Sobre Nosotros </strong></h5>
                     <p> <a href="mailto:info@somosfin.com" class="footer-links"> Contacto</a> </p>
+                    <p> <a href="https://forms.gle/wsSyTsPmJMvG2Gpn6" class="footer-links"> Sumate a
+                            nuestro equipo </a> </p>
+                    <p> <a href="./preguntasfrecuentes" class="footer-links"> Preguntas frecuentes </a>
+                    </p>
                 </div>
                 <div class="footer2">
                     <h5><strong> Legal </strong></h5>
-                    <p> <a href="https://somosfin.notion.site/Pol-ticas-de-Privacidad-c1002f9a76d643c0809ab07d9807c713?pvs=4"
-                            class="footer-links">Política de privacidad</a>
+                    <p> <a href="./politica" class="footer-links"> Política de privacidad</a>
                     </p>
-                    <p> <a href="./terminosycondiciones/tyc.html" class="footer-links"> Términos y condiciones</a>
-                    </p>
-                    <p> <a href="https://somosfin.notion.site/FAQs-3f4b1e0e8faa4cb3a7cf8b402b24f3b0"
-                            class="footer-links"> Preguntas frecuentes </a>
+                    <p> <a href="./terminosycondiciones" class="footer-links"> Términos y
+                            condiciones</a>
                     </p>
                 </div>
             </div>
-
         </footer>
+
         <div class="footer-bottom">
-            <p> ©2023 somosfin </p>
             <div class="footerRedes">
                 <a href="https://www.linkedin.com/company/somosfin/"> LinkedIn </a>
                 <a href="https://www.instagram.com/somos.fin/"> Instagram </a>
-                <a href=""> Facebook </a>
                 <a href="https://twitter.com/somosfin"> Twitter </a>
-                <a href=""> YouTube </a>
             </div>
         </div>
+
+        <span class="ICO"> Somosfin es una compañía registrada en Inglaterra y Gales como Somosfin Ltd (Nro 14249475),
+            36 Streatley Road, Londres NW6 7LS. Somosfin Ltd se encuentra registrada en la Information
+            Commissioner's Office
+            (ICO, Oficina de Protección de Datos del Reino Unido) bajo el número de licencia ZB603110. Somosfin Ltd es
+            un servicio de acompañamiento financiero, y no se encuentra regulado por la Financial Conduct Authority
+            (FCA).
+        </span>
+        <div class="footer-bottom">
+            <span> ©2023 somosfin. Todos los derechos reservados </span>
+        </div>
+
+
 
         <!-- Start of HubSpot Embed Code -->
         <script type="text/javascript" id="hs-script-loader" async defer
             src="//js-eu1.hs-scripts.com/139814969.js"></script>
         <!-- End of HubSpot Embed Code -->
+
+        <script src="./index.js"></script>
 </body>
 
 </html>

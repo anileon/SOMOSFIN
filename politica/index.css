@@ -1,0 +1,11 @@
+@import url("../styles/legal.css");
+
+a{
+    color: black;
+    font-family: 'Inter';
+}
+
+.cuadro {
+    padding: 0px;
+    width: 90%;
+}
